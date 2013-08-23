@@ -1,0 +1,25 @@
+CACHE MANIFEST
+
+#version 8-22-2013
+
+CACHE:
+
+#images
+http://www.gravatar.com/avatar/10a813238af2e307ac186fd9add6eac6?s=80
+/img/favicon.png
+/img/random.png
+/img/site.png
+/img/troll.png
+
+#style sheets
+/css/main.css
+/css/normalize.min.css
+
+#style sheet images
+/img/background.png
+
+#javascript files
+/js/html5shiv.js
+
+NETWORK:
+*

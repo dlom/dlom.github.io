@@ -245,12 +245,17 @@ nav a:hover { color: #eee; }
 
     nav li {
         display: inline-block;
-        white-space: normal;
         width: 50%;
     }
 }
 
 @media only screen and (min-width: 1024px) {
+    #main {
+        -webkit-box-shadow: 0 1em 1em -1em black;
+        -moz-box-shadow: 0 1em 1em -1em black;
+        box-shadow: 0 1em 1em -1em black;
+    }
+
     nav {
         display: block;
         font-size: 200%;
@@ -275,8 +280,8 @@ nav a:hover { color: #eee; }
         position: absolute;
         right: 0;
         top: 0;
-        margin-right: -220px; /* width + 2x padding */
-        width: 180px;
+        margin-right: -200px; /* width + 2x padding */
+        width: 160px;
         box-shadow: inset 1em 0 1em -1em #000;
         -moz-box-shadow: inset 1em 0 1em -1em #000;
         -webkit-box-shadow: inset 1em 0 1em -1em #000;
