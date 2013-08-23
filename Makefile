@@ -1,4 +1,4 @@
-.PHONY: jekyll server view cache
+.PHONY: jekyll server view cache dev
 
 jekyll:
 	jekyll build --safe --watch
@@ -10,14 +10,14 @@ view:
 	xdg-open out/index.html
 
 dev:
-	echo "CACHE MANIFEST" > cache.manifest
-	echo "NETWORK:" >> cache.manifest
-	echo "*" >> cache.manifest
+	echo "CACHE MANIFEST" > manifest.appcache
+	echo "NETWORK:" >> manifest.appcache
+	echo "*" >> manifest.appcache
 
 cache:
-	echo "CACHE MANIFEST" > cache.manifest
-	echo "#version $(shell date +%s)" >> cache.manifest
-	echo "CACHE:" >> cache.manifest
-	git ls-files img css js | sed 's#^#/#' >> cache.manifest
-	echo "NETWORK:" >> cache.manifest
-	echo "*" >> cache.manifest
+	echo "CACHE MANIFEST" > manifest.appcache
+	echo "#version $(shell date +%s)" >> manifest.appcache
+	echo "CACHE:" >> manifest.appcache
+	git ls-files img css js | sed 's#^#/#' >> manifest.appcache
+	echo "NETWORK:" >> manifest.appcache
+	echo "*" >> manifest.appcache
