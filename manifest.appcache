@@ -1,9 +1,0 @@
-CACHE MANIFEST
-#version 1377284658
-CACHE:
-#stuff that should never change:
-/img/background.png
-/css/normalize.min.css
-/js/html5shiv.js
-NETWORK:
-*
