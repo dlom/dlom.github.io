@@ -280,7 +280,6 @@ nav a:hover { color: #eee; }
         box-shadow: inset 1em 0 1em -1em #000;
         -moz-box-shadow: inset 1em 0 1em -1em #000;
         -webkit-box-shadow: inset 1em 0 1em -1em #000;
-        min-height: 0;
     }
 
     nav a.selected { color: #ddd; }
