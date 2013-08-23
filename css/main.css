@@ -168,7 +168,6 @@ aside a:hover { color: #ffeff6; }
 
 nav {
     background-color: #ccc;
-    text-align: center;
     font-weight:bold;
     width: 100%;
 }
@@ -181,6 +180,7 @@ nav ul {
 
 nav li {
     display: block;
+    text-align: center;
     padding-bottom: 5px;
     padding-top: 5px;
 }
@@ -260,10 +260,10 @@ nav a:hover { color: #eee; }
         display: block;
         font-size: 200%;
         position: absolute;
-        text-align: right;
         right: 0;
         top: 0;
         margin-right: 600px;
+        width: auto;
         text-transform: uppercase;
         font-weight: bold;
         background-color: transparent;
@@ -271,6 +271,7 @@ nav a:hover { color: #eee; }
 
     nav li {
         display: list-item;
+        text-align: right;
         margin: 0;
         padding: 0;
         width: auto;
