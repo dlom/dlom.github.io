@@ -20,7 +20,7 @@ projects:
   gh-button-user: Dlom
   gh-button-repo: troll.pl
 - title: favicon.js
-  image: favicon.png
+  image: favicon.gif
   url: https://github.com/Dlom/favicon.js
   desc: A tiny library for changing the favicon.
   gh-button-user: Dlom

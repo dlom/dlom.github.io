@@ -142,7 +142,7 @@ footer {
 }
 
 .project h1 {
-    display: inline-block;
+    display: inline;
 }
 
 .project a h1:hover {
