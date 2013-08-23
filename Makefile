@@ -9,15 +9,5 @@ server:
 view:
 	xdg-open out/index.html
 
-dev:
-	echo "CACHE MANIFEST" > manifest.appcache
-	echo "NETWORK:" >> manifest.appcache
-	echo "*" >> manifest.appcache
-
 cache:
-	echo "CACHE MANIFEST" > manifest.appcache
-	echo "#version $(shell date +%s)" >> manifest.appcache
-	echo "CACHE:" >> manifest.appcache
-	git ls-files img css js | sed 's#^#/#' >> manifest.appcache
-	echo "NETWORK:" >> manifest.appcache
-	echo "*" >> manifest.appcache
+	sed "s/^#version .\+/#version $(shell date +%s)/" -i manifest.appcache

@@ -1,13 +1,9 @@
 CACHE MANIFEST
-#version 1377242947
+#version 1377284658
 CACHE:
-/css/main.css
-/css/normalize.min.css
+#stuff that should never change:
 /img/background.png
-/img/favicon.png
-/img/random.png
-/img/site.png
-/img/troll.png
+/css/normalize.min.css
 /js/html5shiv.js
 NETWORK:
 *
