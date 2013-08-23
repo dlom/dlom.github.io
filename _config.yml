@@ -1,0 +1,33 @@
+safe: true
+lsi: false
+pygments: true
+
+navigation:
+- text: Home
+  url: /
+- text: Projects
+  url: /projects.html
+
+projects:
+- title: This site
+  image: site.png
+  url: http://dlom.github.com
+  desc: This very site was hand-crafted using the <a href="http://html5boilerplate.com">HTML5 Boilerplate</a>.
+- title: troll.pl
+  image: troll.png
+  url: https://github.com/Dlom/troll.pl
+  desc: A pidgin plugin for <a href="http://www.mspaintadventures.com/?s=6">Homestuck</a>.
+  gh-button-user: Dlom
+  gh-button-repo: troll.pl
+- title: favicon.js
+  image: favicon.png
+  url: https://github.com/Dlom/favicon.js
+  desc: A tiny library for changing the favicon.
+  gh-button-user: Dlom
+  gh-button-repo: favicon.js
+- title: node-random
+  image: random.png
+  url: https://github.com/Dlom/node-random
+  desc: A <a href="http://random.org">random.org</a> client for node
+  gh-button-user: Dlom
+  gh-button-repo: node-random

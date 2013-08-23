@@ -16,12 +16,14 @@ body {
 }
 
 ::-moz-selection {
-    background: #b3d4fc;
+    background: #fe57a1;
+    color: #fff;
     text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
+    background: #fe57a1;
+    color: #fff;
     text-shadow: none;
 }
 
@@ -49,44 +51,240 @@ textarea {
 }
 
 .chromeframe {
-    margin: 0.2em 0;
-    background: #ccc;
+    margin: 0;
+    background: #ddd;
     color: #000;
-    padding: 0.2em 0;
+    padding: 0.2em;
 }
+
+.chromeframe a { color: #fe57a1; text-decoration: none; }
+.chromeframe a:visited { color: #ee016a; }
+.chromeframe a:hover { color: #fe2485; }
 
 
 /* ==========================================================================
-   Author's custom styles
+   My Styles
    ========================================================================== */
 
+body {
+    color: #fff;
+    background-color: #111;
+    background-image: url(../img/background.png);
+}
 
+header h1 {
+    color: #fff;
+    font-size: 300%;
+    margin-bottom: 0px;
+    text-align: center;
+}
 
+header h2 {
+    margin-top: 0px;
+    color: #fe57a1;
+    text-align: center;
+}
 
+header {
+    margin: 0 auto;
+    width: auto;
+    max-width: 600px;
+}
 
+footer {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    max-width: 600px;
+}
 
+#main {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+}
 
+/* IE hack thanks to respond.js */
+@media only screen and (min-width: 600px) { header, footer, #main { width: 600px; } }
 
+#content {
+    background-color: #ddd;
+    color: #000;
+    padding: 20px;
+}
 
+#content h1 {
+    color: #888;
+    margin: 0;
+}
 
+#content a { color: #fe57a1; text-decoration: none; }
+#content a:visited { color: #ee016a; }
+#content a:hover { color: #fe2485; }
 
+#avatar {
+    display: none;
+}
 
+#aboutme p, aside p {
+    margin-bottom: 0;
+}
 
+.project {
+    padding: 10px;
+}
+
+.project .thumb {
+    float: left;
+    margin-right: 20px;
+    display: none;
+}
+
+.project h1 {
+    display: inline-block;
+}
+
+.project a h1:hover {
+    text-decoration: underline;
+}
+
+.project .gh-button {
+    display: none;
+}
+
+aside {
+    background-color: #666;
+    padding: 20px;
+}
+
+aside h2 {
+    margin: 0;
+}
+
+aside a { color: #fe8abd;  text-decoration: none; }
+aside a:visited { color: #f3bdd9; }
+aside a:hover { color: #ffeff6; }
+
+nav {
+    background-color: #ccc;
+    text-align: center;
+    font-weight:bold;
+    width: 100%;
+}
+
+nav ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+nav li {
+    display: block;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+nav a { color: #888; text-decoration:none; }
+nav a:visited { color: #888; }
+nav a:hover { color: #eee; }
 
 
 /* ==========================================================================
    Media Queries
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (min-width: 480px) {
+    #avatar {
+        display: block;
+        float: left;
+        width: 80px;
+        height: 80px;
+        margin-right: 18px;
+        border: solid black 1px;
+    }
 
+    #aboutme p {
+        margin-left: 100px;
+    }
+
+    header h1 {
+        margin-bottom: -10px;
+        text-align: left;
+        margin-left: 30px;
+    }
+
+    header h2 {
+        text-align: left;
+        margin-left: 80px;
+    }
+
+    .project {
+        min-height: 130px; /* just in case (but if clearfix doesn't work, chances are this won't either) */
+    }
+
+    .project .thumb {
+        display: block;
+    }
+
+    .project .thumb img {
+        border: solid black 1px;
+        height: 128px;
+        width: 128px;
+    }
+
+    .project .description p {
+        margin-left: 148px;
+        margin-bottom: 0px;
+    }
+
+    .project .gh-button {
+        display: inline;
+        margin-left: 10px;
+    }
+
+    nav li {
+        display: inline-block;
+        white-space: normal;
+        width: 50%;
+    }
 }
 
-@media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
+@media only screen and (min-width: 1024px) {
+    nav {
+        display: block;
+        font-size: 200%;
+        position: absolute;
+        text-align: right;
+        right: 0;
+        top: 0;
+        margin-right: 600px;
+        text-transform: uppercase;
+        font-weight: bold;
+        background-color: transparent;
+    }
 
+    nav li {
+        display: list-item;
+        margin: 0;
+        padding: 0;
+        width: auto;
+    }
+
+    aside {
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin-right: -220px; /* width + 2x padding */
+        width: 180px;
+        box-shadow: inset 1em 0 1em -1em #000;
+        -moz-box-shadow: inset 1em 0 1em -1em #000;
+        -webkit-box-shadow: inset 1em 0 1em -1em #000;
+        min-height: 0;
+    }
+
+    nav a.selected { color: #ddd; }
+    nav a.selected:hover { color: #eee; }
 }
 
 /* ==========================================================================
