@@ -2,6 +2,19 @@ safe: true
 lsi: false
 pygments: true
 
+name: Mark Old
+tagline: Freelance web developer
+title: Mark
+email: dlom234@gmail.com
+gravatar: 10a813238af2e307ac186fd9add6eac6
+github: Dlom
+year: 2013
+aboutme: >
+  Aspiring web developer and designer from Seattle.
+  Writer of HTML, CSS, javascript, ruby, and C++.
+  <a title="Alternate account" href="https://github.com/Skunk-ProRex">Programmer</a> on the <a href="http://ahsrobotics.us">Skunkworks 1983</a> FIRST robotics team.
+  Check out some of my <a href="/projects">projects</a>
+
 navigation:
 - text: Home
   url: /

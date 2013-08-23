@@ -98,6 +98,10 @@ footer {
     max-width: 600px;
 }
 
+footer h3 {
+    font-size: 0.75em;
+}
+
 #main {
     position: relative;
     margin: 0 auto;
