@@ -227,6 +227,10 @@ nav a:hover { color: #eee; }
         margin-left: 80px;
     }
 
+    #projects .project h1 {
+        margin-right: 10px;
+    }
+
     .project {
         min-height: 130px; /* just in case (but if clearfix doesn't work, chances are this won't either) */
     }
@@ -248,7 +252,6 @@ nav a:hover { color: #eee; }
 
     .project .gh-button {
         display: inline;
-        margin-left: 10px;
     }
 
     nav li {

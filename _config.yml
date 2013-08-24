@@ -25,22 +25,26 @@ projects:
 - title: This site
   image: site.png
   url: http://dlom.github.com
-  desc: This very site was hand-crafted using the <a href="http://html5boilerplate.com">HTML5 Boilerplate</a>.
-- title: troll.pl
-  image: troll.png
-  url: https://github.com/Dlom/troll.pl
-  desc: A pidgin plugin for <a href="http://www.mspaintadventures.com/?s=6">Homestuck</a>.
-  gh-button-user: Dlom
-  gh-button-repo: troll.pl
+  desc: This very site was hand-crafted using the <a href="http://html5boilerplate.com">HTML5 Boilerplate</a>
 - title: favicon.js
   image: favicon.gif
   url: https://github.com/Dlom/favicon.js
-  desc: A tiny library for changing the favicon.
+  desc: A tiny library for changing the favicon
   gh-button-user: Dlom
   gh-button-repo: favicon.js
 - title: node-random
   image: random.png
   url: https://github.com/Dlom/node-random
-  desc: A <a href="http://random.org">random.org</a> client for node
+  desc: A <a href="http://random.org">random.org</a> client for node.js
   gh-button-user: Dlom
   gh-button-repo: node-random
+- title: 2013 Ultimate Ascent
+  image: ultimateascent.jpg
+  url: https://github.com/Skunkworks1983/2013UltimateAscent
+  desc: The <a href="http://ahsrobotics.us">Skunkworks 1983</a> code for the 2013 season (Contributed using an <a title="Alternate account" href="https://github.com/Skunk-ProRex">alternate account</a>)
+- title: troll.pl
+  image: troll.png
+  url: https://github.com/Dlom/troll.pl
+  desc: A pidgin plugin for <a href="http://www.mspaintadventures.com/?s=6">Homestuck</a>
+  gh-button-user: Dlom
+  gh-button-repo: troll.pl
