@@ -48,3 +48,9 @@ projects:
   desc: A pidgin plugin for <a href="http://www.mspaintadventures.com/?s=6">Homestuck</a>
   gh-button-user: Dlom
   gh-button-repo: troll.pl
+- title: tableau-gif
+  image: tableau.png
+  url: https://github.com/Dlom/tableau-gif
+  desc: Convert animated gifs into a format that <a href="http://www.tableausoftware.com">Tableau</a> can process and display
+  gh-button-user: Dlom
+  gh-button-repo: tableau-gif
